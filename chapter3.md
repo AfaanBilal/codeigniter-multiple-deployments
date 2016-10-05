@@ -4,30 +4,15 @@ The ``index.php`` is our front-controller for each application instance.
 Here are the things to change:  
 ### The system path
 ````php
-/*  
- *------------------------  
- * SYSTEM DIRECTORY NAME  
- *------------------------  
- */
  $system_path = '../../system'; 
 ````  
 ### The application path
 ````php
-/*  
- *-----------------------------  
- * APPLICATION DIRECTORY NAME 
- *-----------------------------  
- */
  $application_folder = '../../application';
 ````   
 ### Custom CONFIG
-````php
-/*  
- *------------------------  
- *  CUSTOM CONFIG VALUES  
- *------------------------  
- */ 	
- $assign_to_config['base_url'] = 'http://sub-domain-n.example.com'; 
+````php	
+ $assign_to_config['base_url'] = 'https://sub-domain-n.example.com'; 
  // your database group (see next chapter)  
  $assign_to_config['db_group'] = 'subdomain-n';  
  $assign_to_config['encryption_key'] = 'my123secret456key'; 
