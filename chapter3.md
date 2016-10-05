@@ -1,7 +1,7 @@
 # The index.php
 
 The ``index.php`` is our front-controller for each application instance.
-Here are the things to change:
+Here are the things to change:  
 ### The system path
 ````php
 /*  
