@@ -10,10 +10,8 @@ Here are the things to change:
      *--------------------------  
      * SYSTEM DIRECTORY NAME  
      *--------------------------  
-     *  
-     * ...  
      */
-             $system_path = '../../system'; 
+     $system_path = '../../system'; 
     
 ````  
   
@@ -23,12 +21,10 @@ Here are the things to change:
      *-------------------------------  
      * APPLICATION DIRECTORY NAME 
      *-------------------------------  
-     * 
-     * ... 
      *  
      *  NO TRAILING SLASH!  
      */
-             $application_folder = '../../application';
+     $application_folder = '../../application';
 ````   
   
 ### Custom CONFIG
@@ -37,13 +33,11 @@ Here are the things to change:
      *--------------------------  
      *  CUSTOM CONFIG VALUES  
      *--------------------------  
-     * 
-     * ... 
      */ 	
-             $assign_to_config['base_url'] = 'http://sub-domain-n.example.com'; 
-             
-             // your database group (see next chapter)
-             $assign_to_config['db_group'] = 'subdomain-n';  
-             $assign_to_config['encryption_key'] = 'my123secret456encryption789key'; 
-             $assign_to_config['cookie_domain'] = '.sub-domain-n.example.com';
+     $assign_to_config['base_url'] = 'http://sub-domain-n.example.com'; 
+
+     // your database group (see next chapter)
+     $assign_to_config['db_group'] = 'subdomain-n';  
+     $assign_to_config['encryption_key'] = 'my123secret456encryption789key'; 
+     $assign_to_config['cookie_domain'] = '.sub-domain-n.example.com';
 ````
