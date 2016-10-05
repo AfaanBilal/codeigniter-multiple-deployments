@@ -13,10 +13,6 @@ public_html/
     assets/
     .htaccess
     index.php
-  sub-domain-3.example.com/
-    assets/
-    .htaccess
-    index.php
   ...
   sub-domain-n.example.com/
     assets/
