@@ -2,17 +2,17 @@
 
 Here's the code for our ``.htaccess``:
 ````hx
-    # Disable directory listing
-    Options All -Indexes 
-    
-    # Domain filter
-    RewriteEngine on 
-    RewriteCond %{HTTP_HOST} !^sub-domain-n\.example\.com$ [NC] 
-    RewriteRule ^ - [F] 
-    
-    # Remove index.php from URLs
-    RewriteCond $1 !^(index\.php|assets|robots\.txt) 
-    RewriteRule ^(.*)$ index.php/$1 [L]
+# Disable directory listing
+Options All -Indexes 
+
+# Domain filter
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} !^sub-domain-n\.example\.com$ [NC] 
+RewriteRule ^ - [F] 
+
+# Remove index.php from URLs
+RewriteCond $1 !^(index\.php|assets|robots\.txt) 
+RewriteRule ^(.*)$ index.php/$1 [L]
 ````
 
 The first rule - the domain filter - blocks all traffic except for the specified sub domain.
