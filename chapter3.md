@@ -17,6 +17,8 @@ Here are the things to change:
              $system_path = '../../system'; 
     
 ````
+  
+  
 ### The application path
 ````php
     /*  
@@ -35,7 +37,9 @@ Here are the things to change:
      *  NO TRAILING SLASH!  
      */
              $application_folder = '../../application';
-````             
+````   
+  
+  
 ### Custom CONFIG
 ````php
     /*  
