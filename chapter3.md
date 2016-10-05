@@ -17,7 +17,6 @@ Here are the things to change:
     
 ````  
   
-  
 ### The application path
 ````php
     /*  
@@ -31,7 +30,6 @@ Here are the things to change:
      */
              $application_folder = '../../application';
 ````   
-  
   
 ### Custom CONFIG
 ````php
