@@ -1,7 +1,7 @@
 # The .htaccess
 
 Here's the code for our ``.htaccess``:
-````htaccess
+````hx
     # Disable directory listing
     Options All -Indexes 
     
