@@ -1,0 +1,2 @@
+# The config/database.php
+
