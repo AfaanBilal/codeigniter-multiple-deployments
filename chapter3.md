@@ -7,9 +7,9 @@ Here are the things to change:
 ### The system path
 ````php
     /*  
-     *---------------------------------------------------------------  
+     *--------------------------  
      * SYSTEM DIRECTORY NAME  
-     *---------------------------------------------------------------  
+     *--------------------------  
      *  
      * This variable must contain the name of your "system" directory.  
      * Set the path if it is not in the same directory as this file.  
@@ -22,9 +22,9 @@ Here are the things to change:
 ### The application path
 ````php
     /*  
-     *---------------------------------------------------------------  
+     *-------------------------------  
      * APPLICATION DIRECTORY NAME 
-     *---------------------------------------------------------------  
+     *-------------------------------  
      * 
      * If you want this front controller to use a different "application"  
      * directory than the default one you can set its name here. The directory  
@@ -43,9 +43,9 @@ Here are the things to change:
 ### Custom CONFIG
 ````php
     /*  
-     *-------------------------------------------------------------------  
+     *--------------------------  
      *  CUSTOM CONFIG VALUES  
-     *-------------------------------------------------------------------  
+     *--------------------------  
      * 
      * The $assign_to_config array below will be passed dynamically to the  
      * config class when initialized. This allows you to set custom config  
