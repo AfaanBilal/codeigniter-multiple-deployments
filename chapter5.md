@@ -3,11 +3,6 @@
 We just need to add two custom constants in our ``application/config/constants.php`` for our common assets.
 
 ```php
-/* 
-|------------------ 
-| Custom Constants 
-|------------------ 
-*/ 
 defined('ASSETS_BASE') OR define('ASSETS_BASE', 'https://www.example.com/assets/');
 defined('ASSETS_PATH') OR define('ASSETS_PATH', '../assets/'); 
 ```
