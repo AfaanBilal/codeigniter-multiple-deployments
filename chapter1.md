@@ -31,3 +31,4 @@ In the above structure:
 - ``assets`` directory inside our document root will hold the common assets for our application instances. 
 - ``sub-domain-1.example.com`` through ``sub-domain-n.example.com`` will hold our front controllers for each instance of our application. Set the document roots of the sub domains to these directories.
 - ``assets`` directory inside each of the ``sub-domain-n.example.com`` will hold any instance specific assets that we may need (Optional).
+- ``.htaccess`` inside our each of the ``sub-domain-n.example`` will help us remove the ``index.php`` from our URLs as well as implement a domain filter.
