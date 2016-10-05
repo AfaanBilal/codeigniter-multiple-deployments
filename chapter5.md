@@ -1,6 +1,7 @@
 # The constants.php
 
 We just need to add two custom constants in our ``application/config/constants.php`` for our common assets.
+
 ```php
     /* 
     |-------------------------------------------------------------------------- 
