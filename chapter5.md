@@ -11,6 +11,7 @@ We just need to add two custom constants in our ``application/config/constants.p
         defined('ASSETS_BASE') OR define('ASSETS_BASE', 'https://www.example.com/assets/');
         defined('ASSETS_PATH') OR define('ASSETS_PATH', '../assets/'); 
 ````
+
 The ``ASSETS_BASE`` constant is for our ``stylesheets``, ``javascripts``, ``images``, etc. You will need to prepend all of your asset links (css, js, img, etc) with this constant.
 
 For example:
