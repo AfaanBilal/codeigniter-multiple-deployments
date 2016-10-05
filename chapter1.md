@@ -1,28 +1,28 @@
 # The Directory Structure
 The directory structure of our application will be somewhat as follows:
-
-    application/
-    system/
-    public_html/
-      assets/
-      sub-domain-1.example.com/
-        assets/
-        .htaccess
-        index.php
-      sub-domain-2.example.com/
-        assets/
-        .htaccess
-        index.php
-      sub-domain-3.example.com/
-        assets/
-        .htaccess
-        index.php
-      ...
-      sub-domain-n.example.com/
-        assets/
-        .htaccess
-        index.php
-
+````
+application/
+system/
+public_html/
+  assets/
+  sub-domain-1.example.com/
+    assets/
+    .htaccess
+    index.php
+  sub-domain-2.example.com/
+    assets/
+    .htaccess
+    index.php
+  sub-domain-3.example.com/
+    assets/
+    .htaccess
+    index.php
+  ...
+  sub-domain-n.example.com/
+    assets/
+    .htaccess
+    index.php
+````
 In the above structure: 
 - ``application`` is our application directory
 - ``system`` contains the CodeIgniter system files, and 
