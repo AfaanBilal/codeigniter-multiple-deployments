@@ -1,4 +1,4 @@
-# The directory structure
+# The Directory Structure
 
 The directory structure of our application will be somewhat as follows:
 
