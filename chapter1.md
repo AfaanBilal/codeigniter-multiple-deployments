@@ -1,3 +1,13 @@
-# First Chapter
+# The directory structure
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+The directory structure of our application will be somewhat as follows:
+
+- application
+- public_html
+  - assets
+  - sub-domain-1.example.com
+  - sub-domain-2.example.com
+  - sub-domain-3.example.com
+  - ...
+  - sub-domain-n.example.com
+- system
