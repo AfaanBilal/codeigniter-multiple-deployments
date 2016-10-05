@@ -17,4 +17,3 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 
 The first rule - the domain filter - blocks all traffic except for the specified sub domain.
 The second rule removes the ``index.php`` from our URLs. It also allows direct requests to ``robots.txt`` (if we have one) and the ``assets`` directory. All other requests are routed through to ``index.php``.
-
