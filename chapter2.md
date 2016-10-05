@@ -16,5 +16,5 @@ Here's the code for our ``.htaccess``:
 
 
 The first rule - the domain filter - blocks all traffic except for the specified sub domain.
-The second rule removes the ``index.php`` from our URLs.
+The second rule removes the ``index.php`` from our URLs. It also allows direct requests to ``robots.txt`` (if we have one) and the ``assets`` directory.
 
