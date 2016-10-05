@@ -3,7 +3,7 @@
 The database of configuration of each instance is kept in ``application/config/database.php`` in a separate ``db_group``. Since we have assigned the ``db_group`` in our front-controller, we just need to set the same in our ``database.php``.
 
 Here is our ``database.php``:
-
+````php
     $active_group = config_item('db_group'); 
     $query_builder = TRUE; 
     
@@ -52,3 +52,4 @@ Here is our ``database.php``:
     );
     
     // ... so on for every instance
+````
