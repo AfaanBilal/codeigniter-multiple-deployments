@@ -51,6 +51,8 @@ Here are the things to change:
      * Un-comment the $assign_to_config array below to use this feature  
      */ 	
              $assign_to_config['base_url'] = 'http://sub-domain-n.example.com'; 
-             $assign_to_config['db_group'] = 'subdomain';  // your database config 
+             
+             // your database group (see next chapter)
+             $assign_to_config['db_group'] = 'subdomain-n';  
              $assign_to_config['encryption_key'] = 'my123secret456encryption789key'; 
              $assign_to_config['cookie_domain'] = '.sub-domain-n.example.com';
