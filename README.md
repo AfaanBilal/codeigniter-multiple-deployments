@@ -7,6 +7,13 @@ You've written a nice application using CodeIgniter and want to deploy for multi
 
 Let's start.
 
-#### [Read Online][1]
+#### Formats available:
+- [Online][1]
+- [PDF][2]
+- [ePub][3]
+- [Mobi][4]
 
 [1]: https://afaan.ml
+[2]: https://www.gitbook.com/download/pdf/book/afaanbilal/codeigniter-multiple-deployments
+[3]: https://www.gitbook.com/download/epub/book/afaanbilal/codeigniter-multiple-deployments
+[4]: https://www.gitbook.com/download/mobi/book/afaanbilal/codeigniter-multiple-deployments
