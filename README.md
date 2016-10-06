@@ -13,7 +13,7 @@ Let's start.
 - [ePub][3]
 - [Mobi][4]
 
-[1]: https://afaan.ml
+[1]: https://afaan.cf
 [2]: https://www.gitbook.com/download/pdf/book/afaanbilal/codeigniter-multiple-deployments
 [3]: https://www.gitbook.com/download/epub/book/afaanbilal/codeigniter-multiple-deployments
 [4]: https://www.gitbook.com/download/mobi/book/afaanbilal/codeigniter-multiple-deployments
