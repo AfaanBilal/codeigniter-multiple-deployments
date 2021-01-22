@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>The database - CodeIgniter Multiple Deployments</title>
+    <meta name="description" content="Deploy multiple CodeIgniter instances using the same codebase">
+    <meta name="author" content="Afaan Bilal">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="themes/daux/img/favicon-blue.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+    <script>
+        window.base_url = "";
+        document.documentElement.classList.remove('no-js');
+    </script>
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+            <link href='themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <link href='daux_libraries/search.css' rel='stylesheet' type='text/css'>
+    </head>
+<body class="">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger" aria-controls="sidebar_content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="index.html">CodeIgniter Multiple Deployments</a>
+
+    <form role='search' action="/" method="get" class="Search" id="search_form">
+        <label for="search_input">
+            <span class='u-visuallyHidden'>Search</span>
+        </label>
+        <input
+            type="search"
+            id="search_input"
+            class="Search__field"
+            placeholder="Search..."
+            aria-label="Search..."
+            autocomplete="on"
+            results=25
+            autosave=text_search
+        >
+        <label>
+            <input type="submit" class='u-visuallyHidden' />
+            <span class='u-visuallyHidden'>Search...</span>
+            <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+                <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+            </svg>
+        </label>
+    </form>
+
+        <div class="Collapsible__content" id="sidebar_content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="Introduction.html">Introduction</a></li><li class='Nav__item '><a href="The_Directory_Structure.html">The Directory Structure</a></li><li class='Nav__item '><a href="The_htaccess.html">The htaccess</a></li><li class='Nav__item '><a href="The_index.html">The index</a></li><li class='Nav__item Nav__item--active'><a href="The_database.html">The database</a></li><li class='Nav__item '><a href="The_constants.html">The constants</a></li><li class='Nav__item '><a href="Conclusion.html">Conclusion</a></li></ul>
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://github.com/AfaanBilal/codeigniter-multiple-deployments" target="_blank"  rel="noopener noreferrer">GitHub Repo</a>
+                        <br />
+                                            <a href="https://afaan.dev" target="_blank"  rel="noopener noreferrer">Author</a>
+                        <br />
+                                                </div>
+
+                            <div class="CodeToggler">
+                    <hr/>
+                    <label class="Checkbox">Show Code Blocks                        <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                        <div class="Checkbox__indicator"></div>
+                    </label>
+                </div>
+            
+                
+                        </div>
+    </aside>
+    <div class="Columns__right">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="The_database.html">The database</a></h1>
+                    </div>
+
+    <div class="s-content">
+        <h1 id="page_The_database.php">The database.php</h1>
+<p>The database configuration of each instance is kept in <code>application/config/database.php</code> in a separate <code>db_group</code>. Since we have assigned the <code>db_group</code> in our front-controller, we just need to set the same in our <code>database.php</code>.</p>
+<p>Here is our <code>database.php</code>:</p>
+<pre><code class="hljs php">$active_group = config_item(<span class="hljs-string">'db_group'</span>); 
+$query_builder = <span class="hljs-keyword">TRUE</span>; 
+
+$db[<span class="hljs-string">'subdomain-1'</span>] = <span class="hljs-keyword">array</span>(
+    <span class="hljs-string">'dsn'</span>	   =&gt; <span class="hljs-string">''</span>,
+    <span class="hljs-string">'hostname'</span> =&gt; <span class="hljs-string">'localhost'</span>,
+    <span class="hljs-string">'username'</span> =&gt; <span class="hljs-string">'user_1'</span>,
+    <span class="hljs-string">'password'</span> =&gt; <span class="hljs-string">'pass_1'</span>,
+    <span class="hljs-string">'database'</span> =&gt; <span class="hljs-string">'db_1'</span>,
+    <span class="hljs-string">'dbdriver'</span> =&gt; <span class="hljs-string">'mysqli'</span>,
+    <span class="hljs-comment">// ...</span>
+    <span class="hljs-string">'save_queries'</span> =&gt; <span class="hljs-keyword">FALSE</span>
+); 
+
+$db[<span class="hljs-string">'subdomain-2'</span>] = <span class="hljs-keyword">array</span>( 
+    <span class="hljs-string">'dsn'</span>	   =&gt; <span class="hljs-string">''</span>, 
+    <span class="hljs-string">'hostname'</span> =&gt; <span class="hljs-string">'localhost'</span>, 
+    <span class="hljs-string">'username'</span> =&gt; <span class="hljs-string">'user_2'</span>, 
+    <span class="hljs-string">'password'</span> =&gt; <span class="hljs-string">'pass_2'</span>, 
+    <span class="hljs-string">'database'</span> =&gt; <span class="hljs-string">'db_2'</span>, 
+    <span class="hljs-string">'dbdriver'</span> =&gt; <span class="hljs-string">'mysqli'</span>, 
+    <span class="hljs-comment">// ...</span>
+    <span class="hljs-string">'save_queries'</span> =&gt; <span class="hljs-keyword">FALSE</span>
+);
+
+<span class="hljs-comment">// ... so on for every instance</span>
+</code></pre>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="The_index.html">Previous</a></li>            <li class=Pager--next><a href="The_constants.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- JS -->
+            <script src="themes/daux/js/daux.min.js"></script>
+    
+        <script>
+        
+        window.searchLanguage = "";
+        window.searchTranslation = {"Search_one_result":"1 result","Search_results":"!count results","Search_no_results":"Nothing found","Search_common_words_ignored":"Common words are largely ignored","Search_too_short":"Search too short","Search_one_character_or_more":"Should be one character or more","Search_should_be_x_or_more":"Should be !min characters or more","Link_previous":"Previous","Link_next":"Next"};
+    </script>
+
+    <!-- Search -->
+    <script type="text/javascript" src="daux_libraries/search.min.js"></script>
+
+    <script>
+        window.search({'base_url': ''})
+    </script>
+</body>
+</html>

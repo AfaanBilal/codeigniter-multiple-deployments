@@ -1,0 +1,21 @@
+{
+    "title": "CodeIgniter Multiple Deployments",
+    "tagline": "Deploy multiple CodeIgniter instances using the same codebase",
+    "author": "Afaan Bilal",
+    "html": {
+        "repo": "AfaanBilal/codeigniter-multiple-deployments",
+        "theme": "daux-blue",
+        "buttons": {
+            "Author": "https://afaan.dev"
+        },
+        "links": {
+            "GitHub Repo": "https://github.com/AfaanBilal/codeigniter-multiple-deployments",
+            "Author": "https://afaan.dev"
+        }
+    },
+    "strings": {
+        "en": {
+            "View_documentation": "Start Reading"
+        }
+    }
+}
